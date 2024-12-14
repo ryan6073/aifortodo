@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2021 Sergio Belda Galbis
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="tasks">Tasques</string>
+    <string name="projects">Projectes</string>
+    <string name="add">Afegir</string>
+    <string name="add_project">Afegir projecte</string>
+    <string name="add_to_do">Afegir To Do</string>
+    <string name="task">Tasca</string>
+    <string name="project">Projecte</string>
+    <string name="description">Descripció</string>
+    <string name="to_do">To Do</string>
+    <string name="name">Nom</string>
+    <string name="no_tasks">No hi han tasques</string>
+    <string name="no_projects">No hi han projectes</string>
+    <string name="delete_project_dialog">S\'eliminaran totes les tasques vinculades. Vols continuar?</string>
+    <string name="yes">Sí</string>
+    <string name="cancel">Cancelar</string>
+    <string name="tag">Tag</string>
+    <string name="edit">Editar</string>
+    <string name="edit_task">Editar Tasca</string>
+    <string name="edit_project">Editar Projecte</string>
+    <string name="delete_task_dialog">Vols eliminar aquesta tasca?</string>
+    <string name="about">Sobre</string>
+    <string name="open_source_licenses">Llicències de codi obert</string>
+    <string name="more_options">Més opcions</string>
+    <string name="theme">Tema</string>
+    <string name="follow_system">Predeterminat del sistema</string>
+    <string name="light_theme">Clar</string>
+    <string name="dark_theme">Fosc</string>
+    <string name="choose_theme">Triar un tema</string>
+    <string name="terms_and_conditions">Termes i condicions</string>
+    <string name="privacy_policy">Política de privacitat</string>
+    <string name="add_task">Afegir tasca</string>
+    <string name="no_description">No hi ha descripció</string>
+    <string name="delete_project">Eliminar Projecte</string>
+    <string name="must_be_not_empty">El camp no pot quedar buit</string>
+    <string name="enter_task_name">Introdueix el nom de la tasca</string>
+    <string name="enter_description">Introdueix una descripció</string>
+    <string name="choose_tag">Tria una etiqueta</string>
+    <string name="enter_project_name">Introdueix el nom del projecte</string>
+    <string name="accept">Acceptar</string>
+</resources>

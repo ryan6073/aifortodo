@@ -1,0 +1,50 @@
+{
+    "toolList": {
+        "default": {
+            "name": "default",
+            "description": "正常对话，无需特定功能",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        },
+        "summary": {
+            "name": "summary",
+            "description": "需要总结需要做的事情",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        },
+        "reminder": {
+            "name": "reminder",
+            "description": "需要定时提醒",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        },
+        "alarm": {
+            "name": "alarm",
+            "description": "需要设置闹钟",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    },
+    "policyList": {
+        "default": {
+            "prompt": "你是一个TodoList助手，可以回答用户的问题。"
+        },
+        "summary": {
+            "prompt": "你是一个TodoList助手，请你根据数据以第二人称总结用户需要完成的工作\n注意：\n1. 使用中文纯文本输出，不要包含多级结构。\n2. 回答应客观，仅包含数据相关的内容。\n3. 保证回答内容简洁。\n4. 站在助手的角度回答，以\"您\"开头。\n\n回答示例：\n您需要完成以下工作：\n1. 下周五数据结构考试，在李四光楼。\n2. 明天提交体检报告\n\n数据\n{{data}}"
+        },
+        "reminder": {
+            "prompt": "你是一个TodoList助手，请你根据以下内容客观输出需要定时提醒的时间和提醒内容\n注意：\n1. 确保响应可以直接作为JSON解析且不包含多余的字段。\n2. 保证content具体亲和人性化，交代时间和事项。\n\n输出格式: {\"time\": \"2022-12-12 12:00:00\", \"content\": \"提醒内容\"}\n\n回答示例：{\"time\": \"2022-12-12 12:00:00\", \"content\": \"我会在今天晚上12点通知提醒您提交作业\"}\n\n现在的时间是{{time}}。\n\n数据：\n{{data}}"
+        },
+        "alarm": {
+            "prompt": "你是一个TodoList助手，请你根据以下内容客观输出需要添加的任务\n注意：\n1. 确保响应可以直接作为JSON解析且不包含多余的字段。\n2. 保证content具体亲和人性化，交代时间和事项。\n\n输出格式: {\"name\": \"任务名称\", \"content\": \"任务描述\"}\n\n回答示例：{\"name\": \"提交作业\", \"content\": \"我会在12月20日晚上八点振动手机并提醒您提交作业\"}\n\n数据：\n{{data}}"
+        }
+    }
+}

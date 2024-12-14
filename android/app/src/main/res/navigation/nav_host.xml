@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2021 Sergio Belda Galbis
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.intern.aifortodo.ui.task.TasksFragment"
+        tools:layout="@layout/tasks_fragment">
+        <action
+            android:id="@+id/navToTask"
+            app:destination="@id/taskFragment" />
+        <action
+            android:id="@+id/navToAddTask"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/menuDialog"
+        android:name="com.intern.aifortodo.ui.main.MenuBottomSheetDialogFragment"
+        tools:layout="@layout/menu_bottom_sheet_dialog_fragment" />
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.intern.aifortodo.ui.task.TaskFragment"
+        tools:layout="@layout/task_fragment">
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/navToEditTaskFragment"
+            app:destination="@id/editTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.intern.aifortodo.ui.task.EditTaskFragment"
+        android:label="@string/edit_task"
+        tools:layout="@layout/edit_task_fragment">
+        <argument
+            android:name="taskId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProjectFragment"
+        android:name="com.intern.aifortodo.ui.project.EditProjectFragment"
+        android:label="@string/edit_project"
+        tools:layout="@layout/edit_project_fragment">
+        <argument
+            android:name="projectId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.intern.aifortodo.ui.about.AboutFragment"
+        tools:layout="@layout/about_fragment" />
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.intern.aifortodo.ui.task.AddTaskFragment"
+        android:label="@string/add_task"
+        tools:layout="@layout/add_task_fragment" />
+    <fragment
+        android:id="@+id/addProjectFragment"
+        android:name="com.intern.aifortodo.ui.project.AddProjectFragment"
+        android:label="@string/add_project"
+        tools:layout="@layout/add_project_fragment" />
+    <dialog
+        android:id="@+id/moreBottomSheetDialog"
+        android:name="com.intern.aifortodo.ui.main.MoreBottomSheetDialogFragment"
+        tools:layout="@layout/more_bottom_sheet_dialog_fragment" />
+</navigation>
