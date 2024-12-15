@@ -40,6 +40,10 @@
 
 **后面都是AI生成的，本人还没写，，后续有朋友需要配置可以补充，在issue里提就行。**
 
+release放了一个demo，但是AI功能里的url是错误的，需要使用AI功能得自己部署api和key，教程在下面：
+
+[AI For Todo - 书生浦语大模型实战营作品](https://www.bilibili.com/video/BV1knqZYNE2n?vd_source=47011cd38288b395f233e715a1e80837)
+
 ## 技术栈
 
 - 💻 前端
