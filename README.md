@@ -29,12 +29,16 @@
 ### 手机端演示
 [![手机端演示](https://img.youtube.com/vi/8ZyZ4g-Uoes/0.jpg)](https://youtu.be/8ZyZ4g-Uoes)
 
-### 测试版本演示（修复bug后）
+### 测试版本演示
 [![测试版本演示](https://img.youtube.com/vi/eYbQGtHEA2U/0.jpg)](https://youtu.be/eYbQGtHEA2U)
 
 > 注意：手机端版本中存在一个已知的小bug，该问题在测试版本中已修复。建议使用最新的测试版本以获得更好的使用体验。
 
-后面都是AI生成的，本人还没写，，后续有朋友需要配置可以补充
+## 架构图
+
+![架构图](./img/架构图.png)
+
+**后面都是AI生成的，本人还没写，，后续有朋友需要配置可以补充，在issue里提就行。**
 
 ## 技术栈
 

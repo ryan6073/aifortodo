@@ -1,4 +1,4 @@
-package com.intern.aifortodo.ui.ai
+0package com.intern.aifortodo.ui.ai
 
 import AiService
 import retrofit2.Retrofit
